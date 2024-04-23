@@ -1,6 +1,6 @@
-## Cloud Computing IA2
-# Dockerfile for running three-tier-application
-1. From Node: The Dockerfile begins by utilizing the official Node.js image from Docker Hub as the base for the Docker image being built, ensuring a suitable runtime environment for Node.js applications.
+# Cloud Computing IA2 -- Adit Shah (21BCP419)
+## Dockerfile for running three-tier-application
+1. *From Node:* The Dockerfile begins by utilizing the official Node.js image from Docker Hub as the base for the Docker image being built, ensuring a suitable runtime environment for Node.js applications.
 2. Workdir /app: The working directory inside the Docker container is set to /app, facilitating subsequent commands to be executed relative to this directory.
 3. Copy . .: All files and directories from the current directory where the Dockerfile resides are copied into the /app directory within the Docker container, simplifying the setup process.
 4. ENV MONGO_DB_USERNAME=admin & ENV MONGO_DB_PWD=password: Environment variables MONGO_DB_USERNAME and MONGO_DB_PWD are defined within the Docker container, specifying the username and password for MongoDB authentication as admin and password, respectively.
